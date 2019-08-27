@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		355071309C475781EC630EE2 /* Pods_Memoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */; };
+		F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */; };
+		F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */; };
+		F01AE8722313859A00794B29 /* DeletePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */; };
+		F01AE874231388B500794B29 /* DeletePhotosCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE873231388B500794B29 /* DeletePhotosCheckViewController.swift */; };
+		F020FA022314CB0E00680A57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F020FA012314CB0D00680A57 /* GoogleService-Info.plist */; };
+		F0EA01F2230A4D4F008C2F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */; };
+		F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA01F3230A4D4F008C2F25 /* ViewController.swift */; };
+		F0EA01F7230A4D4F008C2F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01F5230A4D4F008C2F25 /* Main.storyboard */; };
+		F0EA01F9230A4D51008C2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01F8230A4D51008C2F25 /* Assets.xcassets */; };
+		F0EA01FC230A4D51008C2F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01FA230A4D51008C2F25 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DBB6CD4CDB804E27AD60069 /* Pods-Memoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.debug.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.debug.xcconfig"; sourceTree = "<group>"; };
+		44786339B9DD2E66E6AEBA20 /* Pods-Memoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.release.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.release.xcconfig"; sourceTree = "<group>"; };
+		E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosSelectViewController.swift; sourceTree = "<group>"; };
+		F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowBackSelectViewController.swift; sourceTree = "<group>"; };
+		F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosViewController.swift; sourceTree = "<group>"; };
+		F01AE873231388B500794B29 /* DeletePhotosCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosCheckViewController.swift; sourceTree = "<group>"; };
+		F020FA012314CB0D00680A57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0EA01EE230A4D4F008C2F25 /* Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0EA01F3230A4D4F008C2F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0EA01F6230A4D4F008C2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0EA01F8230A4D51008C2F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0EA01FB230A4D51008C2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0EA01FD230A4D51008C2F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0EA01EB230A4D4F008C2F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355071309C475781EC630EE2 /* Pods_Memoria.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8740A24030C129B44C350AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A67CD6D2C996820D9F3B08A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DBB6CD4CDB804E27AD60069 /* Pods-Memoria.debug.xcconfig */,
+				44786339B9DD2E66E6AEBA20 /* Pods-Memoria.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F01AE8702313842D00794B29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0EA01F3230A4D4F008C2F25 /* ViewController.swift */,
+				F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */,
+				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
+				F01AE873231388B500794B29 /* DeletePhotosCheckViewController.swift */,
+				F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0EA01E5230A4D4F008C2F25 = {
+			isa = PBXGroup;
+			children = (
+				F0EA01F0230A4D4F008C2F25 /* Memoria */,
+				F0EA01EF230A4D4F008C2F25 /* Products */,
+				A67CD6D2C996820D9F3B08A7 /* Pods */,
+				8740A24030C129B44C350AA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0EA01EF230A4D4F008C2F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0EA01EE230A4D4F008C2F25 /* Memoria.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0EA01F0230A4D4F008C2F25 /* Memoria */ = {
+			isa = PBXGroup;
+			children = (
+				F01AE8702313842D00794B29 /* Controllers */,
+				F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */,
+				F0EA01F5230A4D4F008C2F25 /* Main.storyboard */,
+				F0EA01F8230A4D51008C2F25 /* Assets.xcassets */,
+				F0EA01FA230A4D51008C2F25 /* LaunchScreen.storyboard */,
+				F0EA01FD230A4D51008C2F25 /* Info.plist */,
+				F020FA012314CB0D00680A57 /* GoogleService-Info.plist */,
+			);
+			path = Memoria;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0EA01ED230A4D4F008C2F25 /* Memoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EA0200230A4D51008C2F25 /* Build configuration list for PBXNativeTarget "Memoria" */;
+			buildPhases = (
+				CDE0DC87D79E11D71DC6B6E8 /* [CP] Check Pods Manifest.lock */,
+				F0EA01EA230A4D4F008C2F25 /* Sources */,
+				F0EA01EB230A4D4F008C2F25 /* Frameworks */,
+				F0EA01EC230A4D4F008C2F25 /* Resources */,
+				079BBBC4B2A914BAB89ED073 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memoria;
+			productName = Memoria;
+			productReference = F0EA01EE230A4D4F008C2F25 /* Memoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0EA01E6230A4D4F008C2F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Mariko;
+				TargetAttributes = {
+					F0EA01ED230A4D4F008C2F25 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F0EA01E9230A4D4F008C2F25 /* Build configuration list for PBXProject "Memoria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0EA01E5230A4D4F008C2F25;
+			productRefGroup = F0EA01EF230A4D4F008C2F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0EA01ED230A4D4F008C2F25 /* Memoria */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0EA01EC230A4D4F008C2F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F020FA022314CB0E00680A57 /* GoogleService-Info.plist in Resources */,
+				F0EA01FC230A4D51008C2F25 /* LaunchScreen.storyboard in Resources */,
+				F0EA01F9230A4D51008C2F25 /* Assets.xcassets in Resources */,
+				F0EA01F7230A4D4F008C2F25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079BBBC4B2A914BAB89ED073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE0DC87D79E11D71DC6B6E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0EA01EA230A4D4F008C2F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */,
+				F01AE874231388B500794B29 /* DeletePhotosCheckViewController.swift in Sources */,
+				F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */,
+				F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */,
+				F01AE8722313859A00794B29 /* DeletePhotosViewController.swift in Sources */,
+				F0EA01F2230A4D4F008C2F25 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0EA01F5230A4D4F008C2F25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0EA01F6230A4D4F008C2F25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0EA01FA230A4D51008C2F25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0EA01FB230A4D51008C2F25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0EA01FE230A4D51008C2F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0EA01FF230A4D51008C2F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0EA0201230A4D51008C2F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBB6CD4CDB804E27AD60069 /* Pods-Memoria.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K86JZQ8TP;
+				INFOPLIST_FILE = Memoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Memoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0EA0202230A4D51008C2F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44786339B9DD2E66E6AEBA20 /* Pods-Memoria.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K86JZQ8TP;
+				INFOPLIST_FILE = Memoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Memoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0EA01E9230A4D4F008C2F25 /* Build configuration list for PBXProject "Memoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EA01FE230A4D51008C2F25 /* Debug */,
+				F0EA01FF230A4D51008C2F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0EA0200230A4D51008C2F25 /* Build configuration list for PBXNativeTarget "Memoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EA0201230A4D51008C2F25 /* Debug */,
+				F0EA0202230A4D51008C2F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0EA01E6230A4D4F008C2F25 /* Project object */;
+}
