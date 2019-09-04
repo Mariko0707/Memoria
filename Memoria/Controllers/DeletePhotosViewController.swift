@@ -3,28 +3,45 @@
 //  Memoria
 //
 //  Created by Suzuki Mariko on 26/08/2019.
-//  Copyright © 2019 Mariko. All rights reserved.
+//  Copyright © 2019 Mariko. All rights reserved.................................................................................................................
 //
 
 import UIKit
+import RealmSwift
+import Koloda
 
 class DeletePhotosViewController: UIViewController {
-
+    
+    @IBOutlet weak var KokodaView: UIView!
+    
+    let images = [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+//        kolodaView.dataSource = self
+//        kolodaView.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didClickStay(_ sender: UIButton) {
     }
-    */
-
+    @IBAction func didClickDelete(_ sender: UIButton) {
+    }
+    @IBAction func didClickBack(_ sender: UIButton) {
+    }
+    
 }
+

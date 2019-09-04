@@ -11,8 +11,7 @@
 		F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */; };
 		F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */; };
 		F01AE8722313859A00794B29 /* DeletePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */; };
-		F01AE874231388B500794B29 /* DeletePhotosCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE873231388B500794B29 /* DeletePhotosCheckViewController.swift */; };
-		F020FA022314CB0E00680A57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F020FA012314CB0D00680A57 /* GoogleService-Info.plist */; };
+		F0B62AD9231620890079888F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B62AD8231620890079888F /* Album.swift */; };
 		F0EA01F2230A4D4F008C2F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */; };
 		F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA01F3230A4D4F008C2F25 /* ViewController.swift */; };
 		F0EA01F7230A4D4F008C2F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01F5230A4D4F008C2F25 /* Main.storyboard */; };
@@ -27,8 +26,7 @@
 		F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosSelectViewController.swift; sourceTree = "<group>"; };
 		F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowBackSelectViewController.swift; sourceTree = "<group>"; };
 		F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosViewController.swift; sourceTree = "<group>"; };
-		F01AE873231388B500794B29 /* DeletePhotosCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosCheckViewController.swift; sourceTree = "<group>"; };
-		F020FA012314CB0D00680A57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0B62AD8231620890079888F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		F0EA01EE230A4D4F008C2F25 /* Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EA01F3230A4D4F008C2F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,10 +71,17 @@
 				F0EA01F3230A4D4F008C2F25 /* ViewController.swift */,
 				F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */,
 				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
-				F01AE873231388B500794B29 /* DeletePhotosCheckViewController.swift */,
 				F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0B62ADB2316209F0079888F /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				F0B62AD8231620890079888F /* Album.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 		F0EA01E5230A4D4F008C2F25 = {
@@ -100,13 +105,13 @@
 		F0EA01F0230A4D4F008C2F25 /* Memoria */ = {
 			isa = PBXGroup;
 			children = (
+				F0B62ADB2316209F0079888F /* Object */,
 				F01AE8702313842D00794B29 /* Controllers */,
 				F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */,
 				F0EA01F5230A4D4F008C2F25 /* Main.storyboard */,
 				F0EA01F8230A4D51008C2F25 /* Assets.xcassets */,
 				F0EA01FA230A4D51008C2F25 /* LaunchScreen.storyboard */,
 				F0EA01FD230A4D51008C2F25 /* Info.plist */,
-				F020FA012314CB0D00680A57 /* GoogleService-Info.plist */,
 			);
 			path = Memoria;
 			sourceTree = "<group>";
@@ -171,7 +176,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F020FA022314CB0E00680A57 /* GoogleService-Info.plist in Resources */,
 				F0EA01FC230A4D51008C2F25 /* LaunchScreen.storyboard in Resources */,
 				F0EA01F9230A4D51008C2F25 /* Assets.xcassets in Resources */,
 				F0EA01F7230A4D4F008C2F25 /* Main.storyboard in Resources */,
@@ -228,10 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */,
-				F01AE874231388B500794B29 /* DeletePhotosCheckViewController.swift in Sources */,
 				F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */,
 				F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */,
 				F01AE8722313859A00794B29 /* DeletePhotosViewController.swift in Sources */,
+				F0B62AD9231620890079888F /* Album.swift in Sources */,
 				F0EA01F2230A4D4F008C2F25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

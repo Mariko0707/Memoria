@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import RealmSwift
+import Photos
+
+var photoAssets = [PHAsset]()
+
 
 class ThrowBackSelectViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    var albums:[PhotoAlbum] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
