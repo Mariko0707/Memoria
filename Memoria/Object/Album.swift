@@ -2,20 +2,14 @@
 //  Album.swift
 //  Memoria
 //
-//  Created by Suzuki Mariko on 28/08/2019.
+//  Created by yonekan on 2019/09/04.
 //  Copyright © 2019 Mariko. All rights reserved.
 //
 
-import RealmSwift
-
-
-class PhotoAlbum: Object {
+struct Album {
     
-    // ID (連番)
-    @objc dynamic var id: Int = 0
-    // アルバムの名前
-    @objc dynamic var albumTitle: String = ""
-    // 登録日
-    @objc dynamic var date: Date = Date()
+    let localIdentifier: String
+    
+    let title: String
     
 }
