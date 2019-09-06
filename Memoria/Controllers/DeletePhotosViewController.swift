@@ -56,35 +56,35 @@ class DeletePhotosViewController: UIViewController {
     }
     
     @IBAction func didClickStay(_ sender: UIButton) {
-        KolodaView.
+//        KolodaView.
     }
     @IBAction func didClickDelete(_ sender: UIButton) {
     }
     @IBAction func didClickBack(_ sender: UIButton) {
-        KolodaView.revert
+//        KolodaView.revert
     }
     
 }
 
-extension ViewController: KolodaViewDelegate, KolodaViewDataSource {
-    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        //上でUIViewを返しているのに、下ではimageViewでエラーが発生しないのは、UIViewの中にimageViewが存在しているから
-        
-        // 画像を生成
-        let image = UIImage(named: images[index])
-        // ImageViewに生成した画像を設定
-        let imageView = UIImageView(image: image)
-        // ImageViewを返す
-        return imageView
-    }
-    
-    func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return images.count
-    }
-    
-    // この記述をすることで、上下左右どこにでもスワイプをすることを可能にすることができる！！！！！！！
-    // 逆にこれがないと不可能。
-    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
-        return [.left, .right, .up, .down]
-    }
-}
+//extension ViewController: KolodaViewDelegate, KolodaViewDataSource {
+//    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+//        //上でUIViewを返しているのに、下ではimageViewでエラーが発生しないのは、UIViewの中にimageViewが存在しているから
+//        
+//        // 画像を生成
+//        let image = UIImage(named: images[index])
+//        // ImageViewに生成した画像を設定
+//        let imageView = UIImageView(image: image)
+//        // ImageViewを返す
+//        return imageView
+//    }
+//    
+//    func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
+//        return images.count
+//    }
+//    
+//    // この記述をすることで、上下左右どこにでもスワイプをすることを可能にすることができる！！！！！！！
+//    // 逆にこれがないと不可能。
+//    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+//        return [.left, .right, .up, .down]
+//    }
+//}
