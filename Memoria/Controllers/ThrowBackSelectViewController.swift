@@ -46,5 +46,16 @@ extension ThrowBackSelectViewController: UITableViewDelegate, UITableViewDataSou
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let album = albums[indexPath.row]
+        
+        performSegue(withIdentifier: "toNext", sender: album)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nextVC = segue.destination as! ThrowBackViewController
+        nextVC.album = (sender as! Album)
+        
+    }
 }

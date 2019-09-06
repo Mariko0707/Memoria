@@ -103,6 +103,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="k6O-h1-ZjK" id="0iS-zV-xNJ"/>
+                        <segue destination="8RC-cn-nTu" kind="show" identifier="toNext" id="3Zl-Z6-8JR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2v-BY-52h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1i-ZN-pKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524.6376811594205" y="637.5"/>
+            <point key="canvasLocation" x="3784" y="638"/>
         </scene>
         <!--Delete Photos Select View Controller-->
         <scene sceneID="dHQ-ti-cas">
@@ -218,6 +219,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cne-d5-cQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Throw Back View Controller-->
+        <scene sceneID="TH6-oF-trw">
+            <objects>
+                <viewController id="8RC-cn-nTu" customClass="ThrowBackViewController" customModule="Memoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rha-WV-eNu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCB-ay-T5T" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="10" y="220" width="394" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zq-nj-X1n">
+                                <rect key="frame" x="52" y="697" width="45" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="✖️"/>
+                                <connections>
+                                    <action selector="didClickDelete:" destination="8RC-cn-nTu" eventType="touchUpInside" id="yPp-VI-tZY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8i-5m-atA">
+                                <rect key="frame" x="313" y="697" width="34" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="✔︎">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickStay:" destination="8RC-cn-nTu" eventType="touchUpInside" id="xmQ-zk-H8c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWl-iI-DSS">
+                                <rect key="frame" x="183" y="708" width="48" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="didClickBack:" destination="8RC-cn-nTu" eventType="touchUpInside" id="wOQ-Xx-bP7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ISm-RE-NdW"/>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="MCB-ay-T5T" id="lxx-Y9-ecY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJZ-gA-XWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3500" y="-415"/>
         </scene>
     </scenes>
 </document>

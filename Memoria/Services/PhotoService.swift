@@ -19,12 +19,19 @@ class PhotoService {
         
         assets.enumerateObjects { (asset, index, stop) in
             
-            let album = Album(localIdentifier: asset.localIdentifier, title: asset.localizedTitle!)
+            var photos = [PHAsset]()
             
+            let assets = PHAsset.fetchAssets(in: asset, options: nil)
+            assets.enumerateObjects({ (asset, index, stop) in
+                photos.append(asset as PHAsset)
+            })
+            
+            let album = Album(localIdentifier: asset.localIdentifier, title: asset.localizedTitle!, photos: photos)
             albums.append(album)
         }
         
         return albums
     }
+    
     
 }

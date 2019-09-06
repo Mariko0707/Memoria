@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C2E62F6231F664900CFBB3B /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E62F5231F664900CFBB3B /* PhotoService.swift */; };
 		0C2E62F8231F6ACF00CFBB3B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E62F7231F6ACF00CFBB3B /* Album.swift */; };
+		0C44DAB42322767600CF01BB /* ThrowBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C44DAB32322767600CF01BB /* ThrowBackViewController.swift */; };
 		355071309C475781EC630EE2 /* Pods_Memoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */; };
 		F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */; };
 		F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0C2E62F5231F664900CFBB3B /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		0C2E62F7231F6ACF00CFBB3B /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		0C44DAB32322767600CF01BB /* ThrowBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowBackViewController.swift; sourceTree = "<group>"; };
 		0DBB6CD4CDB804E27AD60069 /* Pods-Memoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.debug.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.debug.xcconfig"; sourceTree = "<group>"; };
 		44786339B9DD2E66E6AEBA20 /* Pods-Memoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.release.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.release.xcconfig"; sourceTree = "<group>"; };
 		E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 				F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */,
 				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
 				F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */,
+				0C44DAB32322767600CF01BB /* ThrowBackViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C44DAB42322767600CF01BB /* ThrowBackViewController.swift in Sources */,
 				F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */,
 				F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */,
 				F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */,
