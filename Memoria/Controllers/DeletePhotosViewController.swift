@@ -66,6 +66,7 @@ class DeletePhotosViewController: UIViewController {
     
 }
 
+
 extension ViewController: KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let photo = UIImage(named: images[index])
@@ -73,3 +74,4 @@ extension ViewController: KolodaViewDelegate, KolodaViewDataSource {
     }
     
 }
+
