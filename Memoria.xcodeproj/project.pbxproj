@@ -84,9 +84,9 @@
 			children = (
 				F0EA01F3230A4D4F008C2F25 /* ViewController.swift */,
 				F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */,
-				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
 				F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */,
 				0C44DAB32322767600CF01BB /* ThrowBackViewController.swift */,
+				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8DB4CQZK65;
+				DEVELOPMENT_TEAM = 6K86JZQ8TP;
 				INFOPLIST_FILE = Memoria/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -423,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8DB4CQZK65;
+				DEVELOPMENT_TEAM = 6K86JZQ8TP;
 				INFOPLIST_FILE = Memoria/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
