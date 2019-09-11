@@ -52,7 +52,9 @@ extension ThrowBackViewController: KolodaViewDelegate, KolodaViewDataSource {
         return imageView
     }
     
-    
+    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+        return [.left, .right, .up, .down]
+    }
     
     
 }

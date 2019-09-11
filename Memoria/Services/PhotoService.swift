@@ -33,5 +33,13 @@ class PhotoService {
         return albums
     }
     
-    
+    func deletePhotos(deletePhotos: [PHAsset]) {
+        PHPhotoLibrary.shared().performChanges({ () -> Void in
+            // 削除などの変更はこのblocks内でリクエストする
+            PHAssetChangeRequest.deleteAssets(deletePhotos as NSFastEnumeration)
+        }, completionHandler: { (success, error) -> Void in
+
+        })
+    }
+
 }

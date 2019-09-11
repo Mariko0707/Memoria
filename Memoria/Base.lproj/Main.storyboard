@@ -116,23 +116,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-YG-eVU" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="10" y="220" width="394" height="398"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-YG-eVU" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="10" y="188" width="394" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vyK-33-ryp"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0t-dw-deN">
-                                <rect key="frame" x="52" y="697" width="45" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0t-dw-deN">
+                                <rect key="frame" x="60" y="648" width="45" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="✖️"/>
                                 <connections>
                                     <action selector="didClickDelete:" destination="0lB-6r-xIk" eventType="touchUpInside" id="8hr-2s-tvd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qml-dO-KYL">
-                                <rect key="frame" x="313" y="697" width="34" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qml-dO-KYL">
+                                <rect key="frame" x="320" y="648" width="34" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="✔︎">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,9 +141,8 @@
                                     <action selector="didClickStay:" destination="0lB-6r-xIk" eventType="touchUpInside" id="vXV-gp-Ndh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HK-6u-VK7">
-                                <rect key="frame" x="183" y="708" width="48" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HK-6u-VK7">
+                                <rect key="frame" x="183" y="598" width="48" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -153,15 +152,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6HK-6u-VK7" firstAttribute="centerX" secondItem="ORH-ix-ICX" secondAttribute="centerX" id="0gl-t8-ofP"/>
+                            <constraint firstItem="X6T-YG-eVU" firstAttribute="centerX" secondItem="ORH-ix-ICX" secondAttribute="centerX" id="5KJ-qr-2UO"/>
+                            <constraint firstItem="4Bq-9W-Cmv" firstAttribute="trailing" secondItem="qml-dO-KYL" secondAttribute="trailing" constant="60" id="9nM-0z-cZz"/>
+                            <constraint firstItem="4Bq-9W-Cmv" firstAttribute="trailing" secondItem="X6T-YG-eVU" secondAttribute="trailing" constant="10" id="Big-n8-NEs"/>
+                            <constraint firstItem="4Bq-9W-Cmv" firstAttribute="bottom" secondItem="qml-dO-KYL" secondAttribute="bottom" constant="105" id="HTY-Sy-8vK"/>
+                            <constraint firstItem="4Bq-9W-Cmv" firstAttribute="bottom" secondItem="h0t-dw-deN" secondAttribute="bottom" constant="105" id="PpF-yq-UOu"/>
+                            <constraint firstItem="X6T-YG-eVU" firstAttribute="top" secondItem="4Bq-9W-Cmv" secondAttribute="top" constant="100" id="YLx-zx-swN"/>
+                            <constraint firstItem="h0t-dw-deN" firstAttribute="leading" secondItem="4Bq-9W-Cmv" secondAttribute="leading" constant="60" id="b5g-Ba-fPs"/>
+                            <constraint firstItem="X6T-YG-eVU" firstAttribute="leading" secondItem="4Bq-9W-Cmv" secondAttribute="leading" constant="10" id="lQs-pf-QPk"/>
+                            <constraint firstItem="6HK-6u-VK7" firstAttribute="top" secondItem="X6T-YG-eVU" secondAttribute="bottom" constant="110" id="rof-wx-gB8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Bq-9W-Cmv"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="kolodaView" destination="X6T-YG-eVU" id="Daf-aA-Nxj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1i-ZN-pKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3784" y="638"/>
+            <point key="canvasLocation" x="3767" y="563"/>
         </scene>
         <!--Delete Photos Select View Controller-->
         <scene sceneID="dHQ-ti-cas">
@@ -227,42 +240,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCB-ay-T5T" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="10" y="220" width="394" height="398"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCB-ay-T5T" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="10" y="191" width="394" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="i16-Wk-bcM"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zq-nj-X1n">
-                                <rect key="frame" x="52" y="697" width="45" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="✖️"/>
-                                <connections>
-                                    <action selector="didClickDelete:" destination="8RC-cn-nTu" eventType="touchUpInside" id="yPp-VI-tZY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8i-5m-atA">
-                                <rect key="frame" x="313" y="697" width="34" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="✔︎">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickStay:" destination="8RC-cn-nTu" eventType="touchUpInside" id="xmQ-zk-H8c"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWl-iI-DSS">
-                                <rect key="frame" x="183" y="708" width="48" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="didClickBack:" destination="8RC-cn-nTu" eventType="touchUpInside" id="wOQ-Xx-bP7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MCB-ay-T5T" firstAttribute="centerX" secondItem="Rha-WV-eNu" secondAttribute="centerX" id="1ye-12-BwG"/>
+                            <constraint firstItem="MCB-ay-T5T" firstAttribute="top" secondItem="ISm-RE-NdW" secondAttribute="top" constant="100" id="f5o-6I-U7p"/>
+                            <constraint firstItem="MCB-ay-T5T" firstAttribute="leading" secondItem="ISm-RE-NdW" secondAttribute="leading" constant="10" id="j2R-mI-FHS"/>
+                            <constraint firstItem="ISm-RE-NdW" firstAttribute="trailing" secondItem="MCB-ay-T5T" secondAttribute="trailing" constant="10" id="xzg-Ix-DNy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ISm-RE-NdW"/>
                     </view>
                     <connections>
@@ -271,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJZ-gA-XWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3500" y="-415"/>
+            <point key="canvasLocation" x="3500.0000000000005" y="-415.17857142857139"/>
         </scene>
     </scenes>
 </document>

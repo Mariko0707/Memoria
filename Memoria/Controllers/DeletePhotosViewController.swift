@@ -9,30 +9,39 @@
 import UIKit
 import Koloda
 import Photos
+import FontAwesome_swift
+
 
 class DeletePhotosViewController: UIViewController {
     
     @IBOutlet weak var kolodaView: KolodaView!
     var album: Album! = nil
     
+    let photoService = PhotoService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        allDelete.font = UIFont.fontAwesome(ofSize: 40, style: .solid)
+//        allDelete.text = String.fontAwesomeIcon(name: .trash)
         
         kolodaView.dataSource = self
         kolodaView.delegate = self
     }
     
     @IBAction func didClickStay(_ sender: UIButton) {
+        kolodaView.swipe(.right)
     }
     @IBAction func didClickDelete(_ sender: UIButton) {
+        photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
+        kolodaView.swipe(.left)
     }
     @IBAction func didClickBack(_ sender: UIButton) {
+        kolodaView.revertAction()
     }
     
 }
-
 
 //extension DeletePhotosViewController: KolodaViewDelegate, KolodaViewDataSource {
 //
@@ -77,6 +86,22 @@ extension DeletePhotosViewController: KolodaViewDelegate, KolodaViewDataSource {
     }
     
     
-    
+    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+        return [.left, .right, .up, .down]
+    }
     
 }
+//
+//func deletePhotos(deletePhotos: [PHAsset], completion: @escaping () -> Void) {
+//    PHPhotoLibrary.shared().performChanges({ () -> Void in
+//        // 削除などの変更はこのblocks内でリクエストする
+//        PHAssetChangeRequest.deleteAssets(deletePhotos as NSFastEnumeration)
+//    }, completionHandler: { (success, error) -> Void in
+//        // 完了時の処理をここに記述
+//        //            for deletePhoto in deletePhotos {
+//        //                self.deletePhotosFromRealm(localIdentifier: deletePhoto.localIdentifier)
+//        //            }
+//        completion()
+//    })
+//}
+

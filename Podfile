@@ -9,6 +9,8 @@ target 'Memoria' do
 	pod 'RevealingSplashView'
 	pod 'RealmSwift'
 	pod "Koloda"
+	pod 'FontAwesome.swift'
+
 	
 
 end

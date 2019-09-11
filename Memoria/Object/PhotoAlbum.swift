@@ -13,9 +13,7 @@ class PhotoAlbum: Object {
     
     // ID (連番)
     @objc dynamic var id: Int = 0
-    // アルバムの名前
-    @objc dynamic var albumTitle: String = ""
-    // 登録日
-    @objc dynamic var date: Date = Date()
+
+    @objc dynamic var localIdentifier = ""
     
 }
