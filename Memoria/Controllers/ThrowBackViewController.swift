@@ -9,6 +9,7 @@
 import UIKit
 import Koloda
 import Photos
+import RealmSwift
 
 class ThrowBackViewController: UIViewController {
 

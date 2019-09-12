@@ -14,13 +14,16 @@ import FontAwesome_swift
 
 class DeletePhotosViewController: UIViewController {
     
+    @IBOutlet weak var backGroundView2: UIImageView!
     @IBOutlet weak var kolodaView: KolodaView!
     var album: Album! = nil
     
     let photoService = PhotoService()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        setSwipeBack()
 
         // Do any additional setup after loading the view.
 //        allDelete.font = UIFont.fontAwesome(ofSize: 40, style: .solid)
@@ -40,7 +43,20 @@ class DeletePhotosViewController: UIViewController {
     @IBAction func didClickBack(_ sender: UIButton) {
         kolodaView.revertAction()
     }
+    @IBAction func didClickAllDelete(_ sender: UIButton) {
+       photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
+        kolodaView.swipe(.left)
+    }
     
+    //左にスワイプしたら削除にしたい
+    @IBAction func didSwipeLeft(_ sender: UISwipeGestureRecognizer) {
+        photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
+        kolodaView.swipe(.left)
+    }
+    //上にスワイプしたら１枚もどる
+    @IBAction func didClickUp(_ sender: UISwipeGestureRecognizer) {
+        kolodaView.revertAction()   
+    }
 }
 
 //extension DeletePhotosViewController: KolodaViewDelegate, KolodaViewDataSource {
@@ -105,3 +121,13 @@ extension DeletePhotosViewController: KolodaViewDelegate, KolodaViewDataSource {
 //    })
 //}
 
+
+// 必要なかったけどスワイプして１つ前の画面に戻るやつ
+//extension DeletePhotosViewController {
+//    func setSwipeBack() {
+//        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
+//        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handNavigationTransition:")))
+//        self.view.addGestureRecognizer(recognizer)
+//    }
+//
+//}
