@@ -32,6 +32,7 @@ class DeletePhotosViewController: UIViewController {
         
         kolodaView.dataSource = self
         kolodaView.delegate = self
+        
     }
     
     @IBAction func didClickStay(_ sender: UIButton) {

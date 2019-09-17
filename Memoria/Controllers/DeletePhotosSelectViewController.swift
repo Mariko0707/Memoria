@@ -57,7 +57,7 @@ extension DeletePhotosSelectViewController: UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDelete" {
         
-        let inputVC = segue.destination as! DeletePhotosViewController
+        let inputVC = segue.destination as! DeletePhotoAllViewController
             
             inputVC.album = sender as? Album
         }
