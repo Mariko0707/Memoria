@@ -15,10 +15,7 @@ class PhotoAlbum: Object {
     @objc dynamic var id: Int = 0
 
     @objc dynamic var localIdentifier = ""
-    
-    @objc dynamic var image: UIImage? = nil
-    
-    @objc dynamic private var imageData: NSData? = nil
+
 }
 
 

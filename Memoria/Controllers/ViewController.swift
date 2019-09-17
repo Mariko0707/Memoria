@@ -48,12 +48,13 @@ class ViewController: UIViewController {
             print("Completed")
         }
         
-        let LogoImage = UIImage (named: "logo")
+        let LogoImage = UIImage (named: "Memoria")
         imageView.image = LogoImage
         // ここまで
         
     }
     // ボタンからの画面遷移
+    // 思い出ボタン
     @IBAction func didClickButtonforTB(_ sender: UIButton) {
         performSegue(withIdentifier: "toTB", sender: nil)
     }

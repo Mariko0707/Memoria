@@ -25,6 +25,9 @@ class ThrowBackViewController: UIViewController {
         
     }
     
+    @IBAction func didClickButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toSetting", sender: nil)
+    }
 }
 
 extension ThrowBackViewController: KolodaViewDelegate, KolodaViewDataSource {

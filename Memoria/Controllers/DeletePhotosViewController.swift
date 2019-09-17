@@ -10,6 +10,7 @@ import UIKit
 import Koloda
 import Photos
 import FontAwesome_swift
+import RealmSwift
 
 
 class DeletePhotosViewController: UIViewController {
@@ -37,22 +38,41 @@ class DeletePhotosViewController: UIViewController {
         kolodaView.swipe(.right)
     }
     @IBAction func didClickDelete(_ sender: UIButton) {
-        photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
+//        photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
+        let realm = try! Realm()
+        
+        let photo = PhotoAlbum()
+        let id = (realm.objects(PhotoAlbum.self).max(ofProperty: "id") as Int? ?? 0) + 1
+        photo.id = id
+        photo.localIdentifier = (album.photos[kolodaView.currentCardIndex]).localIdentifier
+        
+        try! realm.write {
+            realm.add(photo)
+        }
+        
         kolodaView.swipe(.left)
     }
     @IBAction func didClickBack(_ sender: UIButton) {
         kolodaView.revertAction()
     }
     @IBAction func didClickAllDelete(_ sender: UIButton) {
-       photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
-        kolodaView.swipe(.left)
+        let realm = try! Realm()
+        
+        let photos = realm.objects(PhotoAlbum.self).reversed() as [PhotoAlbum]
+        var ids: [String] = []
+        
+        for photo in photos {
+            ids.append(photo.localIdentifier)
+        }
+        
+        let assets = photoService.getPhotoAssetsByIdentifiers(localIdentifiers: ids)
+        photoService.deletePhotos(deletePhotos: assets)
+        
+        try! realm.write {
+            realm.deleteAll()
+        }
     }
     
-    //左にスワイプしたら削除にしたい
-    @IBAction func didSwipeLeft(_ sender: UISwipeGestureRecognizer) {
-        photoService.deletePhotos(deletePhotos: [album.photos[kolodaView.currentCardIndex]])
-        kolodaView.swipe(.left)
-    }
     //上にスワイプしたら１枚もどる
     @IBAction func didClickUp(_ sender: UISwipeGestureRecognizer) {
         kolodaView.revertAction()   
@@ -106,6 +126,24 @@ extension DeletePhotosViewController: KolodaViewDelegate, KolodaViewDataSource {
         return [.left, .right, .up, .down]
     }
     
+    func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        
+        if direction == .left {
+            
+            let realm = try! Realm()
+            
+            let photo = PhotoAlbum()
+            let id = (realm.objects(PhotoAlbum.self).max(ofProperty: "id") as Int? ?? 0) + 1
+            photo.id = id
+            photo.localIdentifier = (album.photos[index]).localIdentifier
+            
+            try! realm.write {
+                realm.add(photo)
+            }
+            
+        }
+        
+    }
 }
 //
 //func deletePhotos(deletePhotos: [PHAsset], completion: @escaping () -> Void) {

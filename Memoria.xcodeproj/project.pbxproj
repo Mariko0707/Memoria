@@ -11,6 +11,7 @@
 		0C2E62F8231F6ACF00CFBB3B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E62F7231F6ACF00CFBB3B /* Album.swift */; };
 		0C44DAB42322767600CF01BB /* ThrowBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C44DAB32322767600CF01BB /* ThrowBackViewController.swift */; };
 		355071309C475781EC630EE2 /* Pods_Memoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */; };
+		F01A6B29232B747C00B39762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01A6B28232B747C00B39762 /* Assets.xcassets */; };
 		F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */; };
 		F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */; };
 		F01AE8722313859A00794B29 /* DeletePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */; };
@@ -18,8 +19,10 @@
 		F0EA01F2230A4D4F008C2F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */; };
 		F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA01F3230A4D4F008C2F25 /* ViewController.swift */; };
 		F0EA01F7230A4D4F008C2F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01F5230A4D4F008C2F25 /* Main.storyboard */; };
-		F0EA01F9230A4D51008C2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01F8230A4D51008C2F25 /* Assets.xcassets */; };
 		F0EA01FC230A4D51008C2F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EA01FA230A4D51008C2F25 /* LaunchScreen.storyboard */; };
+		F0EEB26023306F170092FE38 /* DeletePhotoAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEB25F23306F170092FE38 /* DeletePhotoAllViewController.swift */; };
+		F0EEB2622330715F0092FE38 /* ThrowBackSettingDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEB2612330715F0092FE38 /* ThrowBackSettingDateViewController.swift */; };
+		F0EEB264233076250092FE38 /* ThrowBackPhotoAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEB263233076250092FE38 /* ThrowBackPhotoAllViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,7 @@
 		0DBB6CD4CDB804E27AD60069 /* Pods-Memoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.debug.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.debug.xcconfig"; sourceTree = "<group>"; };
 		44786339B9DD2E66E6AEBA20 /* Pods-Memoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.release.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.release.xcconfig"; sourceTree = "<group>"; };
 		E530F2A28A5A9531D6A87084 /* Pods_Memoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01A6B28232B747C00B39762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosSelectViewController.swift; sourceTree = "<group>"; };
 		F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowBackSelectViewController.swift; sourceTree = "<group>"; };
 		F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotosViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +41,11 @@
 		F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EA01F3230A4D4F008C2F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0EA01F6230A4D4F008C2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F0EA01F8230A4D51008C2F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0EA01FB230A4D51008C2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0EA01FD230A4D51008C2F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EEB25F23306F170092FE38 /* DeletePhotoAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePhotoAllViewController.swift; sourceTree = "<group>"; };
+		F0EEB2612330715F0092FE38 /* ThrowBackSettingDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowBackSettingDateViewController.swift; sourceTree = "<group>"; };
+		F0EEB263233076250092FE38 /* ThrowBackPhotoAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThrowBackPhotoAllViewController.swift; path = ../../ThrowBackPhotoAllViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,13 @@
 			isa = PBXGroup;
 			children = (
 				F0EA01F3230A4D4F008C2F25 /* ViewController.swift */,
-				F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */,
+				F0EEB25F23306F170092FE38 /* DeletePhotoAllViewController.swift */,
+				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
 				F01AE86C2313807600794B29 /* DeletePhotosSelectViewController.swift */,
 				0C44DAB32322767600CF01BB /* ThrowBackViewController.swift */,
-				F01AE8712313859A00794B29 /* DeletePhotosViewController.swift */,
+				F0EEB263233076250092FE38 /* ThrowBackPhotoAllViewController.swift */,
+				F01AE86E2313841A00794B29 /* ThrowBackSelectViewController.swift */,
+				F0EEB2612330715F0092FE38 /* ThrowBackSettingDateViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,9 +135,9 @@
 				F01AE8702313842D00794B29 /* Controllers */,
 				F0EA01F1230A4D4F008C2F25 /* AppDelegate.swift */,
 				F0EA01F5230A4D4F008C2F25 /* Main.storyboard */,
-				F0EA01F8230A4D51008C2F25 /* Assets.xcassets */,
 				F0EA01FA230A4D51008C2F25 /* LaunchScreen.storyboard */,
 				F0EA01FD230A4D51008C2F25 /* Info.plist */,
+				F01A6B28232B747C00B39762 /* Assets.xcassets */,
 			);
 			path = Memoria;
 			sourceTree = "<group>";
@@ -145,6 +154,7 @@
 				F0EA01EB230A4D4F008C2F25 /* Frameworks */,
 				F0EA01EC230A4D4F008C2F25 /* Resources */,
 				079BBBC4B2A914BAB89ED073 /* [CP] Embed Pods Frameworks */,
+				F01A6B2A232BAABB00B39762 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0EA01FC230A4D51008C2F25 /* LaunchScreen.storyboard in Resources */,
-				F0EA01F9230A4D51008C2F25 /* Assets.xcassets in Resources */,
+				F01A6B29232B747C00B39762 /* Assets.xcassets in Resources */,
 				F0EA01F7230A4D4F008C2F25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +251,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F01A6B2A232BAABB00B39762 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Set the build number to the count of Git commits\nbuildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,8 +277,11 @@
 			files = (
 				0C44DAB42322767600CF01BB /* ThrowBackViewController.swift in Sources */,
 				F0EA01F4230A4D4F008C2F25 /* ViewController.swift in Sources */,
+				F0EEB26023306F170092FE38 /* DeletePhotoAllViewController.swift in Sources */,
+				F0EEB264233076250092FE38 /* ThrowBackPhotoAllViewController.swift in Sources */,
 				F01AE86D2313807600794B29 /* DeletePhotosSelectViewController.swift in Sources */,
 				F01AE86F2313841A00794B29 /* ThrowBackSelectViewController.swift in Sources */,
+				F0EEB2622330715F0092FE38 /* ThrowBackSettingDateViewController.swift in Sources */,
 				F01AE8722313859A00794B29 /* DeletePhotosViewController.swift in Sources */,
 				F0B62AD9231620890079888F /* PhotoAlbum.swift in Sources */,
 				F0EA01F2230A4D4F008C2F25 /* AppDelegate.swift in Sources */,

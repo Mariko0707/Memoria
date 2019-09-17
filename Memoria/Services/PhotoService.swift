@@ -42,4 +42,18 @@ class PhotoService {
         })
     }
 
+    func getPhotoAssetsByIdentifiers(localIdentifiers: [String]) -> [PHAsset] {
+        var photoAssets = [PHAsset]()
+        
+        let assets = PHAsset.fetchAssets(withLocalIdentifiers: localIdentifiers, options: nil)
+        
+        assets.enumerateObjects({ [weak self] (asset, index, stop) -> Void in
+            guard self != nil else {
+                return
+            }
+            photoAssets.append(asset as PHAsset)
+        })
+        
+        return photoAssets
+    }
 }
