@@ -54,8 +54,11 @@ extension ThrowBackSelectViewController: UITableViewDelegate, UITableViewDataSou
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let nextVC = segue.destination as! ThrowBackViewController
-        nextVC.album = (sender as! Album)
-        
+        if segue.identifier == "toNext" {
+        let nextVC = segue.destination as! ThrowBackPhotoAllViewController
+            nextVC.album = sender as? Album
+
+            }
     }
+    
 }

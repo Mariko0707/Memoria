@@ -15,5 +15,5 @@ struct Album {
     let title: String
  
     // アルバム内の写真
-    let photos: [PHAsset]
+    var photos: [PHAsset]
 }

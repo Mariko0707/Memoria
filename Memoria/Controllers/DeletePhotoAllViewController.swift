@@ -82,7 +82,6 @@ extension DeletePhotoAllViewController: UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        
         //ヘッダーの場合
         let testSection = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
         
@@ -91,6 +90,13 @@ extension DeletePhotoAllViewController: UICollectionViewDelegate, UICollectionVi
         
         return testSection
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellSize = self.view.bounds.width / 3 - 5
+        
+        return CGSize(width: cellSize, height: cellSize)
         
     }
 }
